@@ -15,10 +15,10 @@ app.use(cors());
 app.use(express.json()); // For parsing application/json
 app.use('/api', userRoutes);
 
-app.use(express.static(path.join(__dirname, '../../gym-app/dist/gym-app')));
-app.use('/*', function(req, res){
- res.sendFile(path.join(__dirname + '.../../gym-app/dist/gym-app/index.html'));
-})
+// app.use(express.static(path.join(__dirname, '../../gym-app/dist/gym-app')));
+// app.use('/*', function(req, res){
+//  res.sendFile(path.join(__dirname + '.../../gym-app/dist/gym-app/index.html'));
+// })
 
 
 // MongoDB Connection
