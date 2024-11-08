@@ -1,7 +1,6 @@
 const express = require('express');
-const path = require('path')
 const mongoose = require('mongoose');
-const userRoutes = require('../functions/userRoutes');
+const userRoutes = require('./userRoutes');
 const cors = require('cors');
 const ServerlessHttp = require('serverless-http');
 require('dotenv').config(); // Load environment variables from .env file
